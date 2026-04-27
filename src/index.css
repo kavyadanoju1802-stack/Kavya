@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@300;600;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #050505;
+  color: #fff;
+}
+
+.mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.neon-border-green {
+  border: 1px solid #39FF14;
+  box-shadow: 0 0 10px rgba(57, 255, 20, 0.3);
+}
+
+.neon-text-pink {
+  color: #FF00FF;
+  text-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+}
+
+.neon-bg-cyan {
+  background: #00FFFF;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+}
+
+.glass-panel {
+  background: rgba(15, 15, 15, 0.8);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.scanline {
+  background: linear-gradient(to bottom, transparent 50%, rgba(0, 255, 0, 0.02) 50%);
+  background-size: 100% 4px;
+  pointer-events: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  box-shadow: 0 0 10px #22d3ee, 0 0 20px #22d3ee;
+}
+
+input[type=range]::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border: none;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  box-shadow: 0 0 10px #22d3ee, 0 0 20px #22d3ee;
+}
